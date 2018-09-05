@@ -38,8 +38,6 @@ t23 = []
 t13 = []
 t03 = []
 
-whichround = 0;
-
 def pickwinner(t1, t2 , r):
     w = random.random() * (t1.rating+t2.rating)
     if(w > t1.rating):
@@ -54,7 +52,6 @@ def pickwinner(t1, t2 , r):
 
 #round1
 print("Round 1:")
-whichround = 1
 
 (ss, rogue) = pickwinner(ss, rogue, 1)
 (vp, nip) = pickwinner(vp, nip, 1)
@@ -193,26 +190,3 @@ for t in t13:
 print("\n0-3:")
 for t in t03:
     print(t.name)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
